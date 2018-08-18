@@ -1,5 +1,5 @@
 {
-    "name": "behatx/yiix-extension",
+    "name": "behat/yiix-extension",
     "type": "behat-extension",
     "description": "Yii2 framework extension for Behat 3.5.0",
     "keywords": ["framework", "web", "bdd"],
