@@ -5,7 +5,7 @@
     "keywords": ["framework", "web", "bdd"],
     "homepage": "http://behat.org",
     "license": "MIT",
-    "version": "0.5.0",
+    "version": "0.1.0",
     "authors": [
         {
             "name": "Jeff Liu",
