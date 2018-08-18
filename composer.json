@@ -1,0 +1,27 @@
+{
+    "name": "behatx/yiix-extension",
+    "type": "behat-extension",
+    "description": "Yii2 framework extension for Behat 3.5.0",
+    "keywords": ["framework", "web", "bdd"],
+    "homepage": "http://behat.org",
+    "license": "MIT",
+    "version": "0.5.0",
+    "authors": [
+        {
+            "name": "Jeff Liu",
+            "email": "jeff.liu.guo@gmail.com"
+        }
+    ],
+
+    "require": {
+        "php":          ">=5.3.2",
+        "behat/behat":  "~3.5"
+    },
+
+    "suggest": {
+    },
+
+    "autoload": {
+        "psr-0": { "Behat\\YiiXExtension": "src/" }
+    }
+}

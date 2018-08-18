@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+        <parameter key="behat.yiix_extension.context.initializer.class">Behat\YiiXExtension\Context\Initializer\YiiXAwareInitializer</parameter>
+        <parameter key="behat.yiix_extension.framework_script"></parameter>
+        <parameter key="behat.yiix_extension.config_script"></parameter>
+        <parameter key="behat.yiix_extension.application_class_name"></parameter>
+    </parameters>
+
+    <services>
+        <service id="behat.yiix_extension.context.initializer" class="%behat.yiix_extension.context.initializer.class%">
+            <argument>%behat.yiix_extension.framework_script%</argument>
+            <argument>%behat.yiix_extension.config_script%</argument>
+            <argument>%behat.yiix_extension.application_class_name%</argument>
+            <tag name="behat.context.initializer" />
+        </service>
+    </services>
+</container>
